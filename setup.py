@@ -14,6 +14,7 @@ setup(
         'spacy>=3.6.1',
         'tiktoken',
         'tenacity',
+        'langchain_community',
     ],
     entry_points={
         'console_scripts': [

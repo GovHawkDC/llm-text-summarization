@@ -15,6 +15,7 @@ setup(
         'tiktoken',
         'tenacity',
         'langchain_community',
+        'langchain-openai',
     ],
     entry_points={
         'console_scripts': [

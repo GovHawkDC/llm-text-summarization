@@ -1,4 +1,5 @@
 import langchain
+import langchain.schema.document
 
 # Python installed module
 import tiktoken

@@ -9,9 +9,9 @@ A comprehensive guide and codebase for text summarization harnessing the capabil
 
 ## 🚀 Getting Started
 1. **Clone the Repository**
-2. **Install Dependencies**: 
+2. **Install from setup.py**: 
     ```bash
-    python3 -m pip install -r requirements.txt
+    python3 -m pip install .
     ```
 3. **Install Spacy's English Dataset**: 
     ```bash
@@ -21,12 +21,14 @@ A comprehensive guide and codebase for text summarization harnessing the capabil
     ```bash
     export OPENAI_API_KEY='sk-...'
     ```
-5. **Configure IO**: Navigate to `src/config.yaml` and update the `input_file` and `output_file` parameters under `io_config`.
-6. **File Handling**: For the input file, only `.txt` is accepted. For the output, `.json` is preferred. Place the input file in the `input` folder. The generated summary will be in the `output` folder.
+5. **Configure settings**: Copy the example settings file and modify as needed.
+    ```bash
+    cp config.example.yaml config.yaml
+    ```
+6. **File Handling**: For the input file, only `.txt` is accepted. For the output, `.json` is preferred.
 7. **Run the Program**: 
     ```bash
-    cd src/
-    python3 main.py
+    llm-summarize my_input.txt my_output.json
     ```
 
 ## 🛠 Understanding the `config.yaml` File

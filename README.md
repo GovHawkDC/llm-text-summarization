@@ -13,6 +13,11 @@ A comprehensive guide and codebase for text summarization harnessing the capabil
     ```bash
     python3 -m pip install .
     ```
+    or, with uv:
+    ```bash
+    uv venv
+    source .venv/bin/activate
+    ```
 3. **Install Spacy's English Dataset**: 
     ```bash
     python3 -m spacy download en_core_web_sm

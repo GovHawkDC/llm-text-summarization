@@ -17,6 +17,10 @@ A comprehensive guide and codebase for text summarization harnessing the capabil
     ```bash
     python3 -m spacy download en_core_web_sm
     ```
+    or, with uv:
+    ```bash
+    uv tool run --with pip spacy download en_core_web_sm
+    ```
 4. **Set Up OpenAI API Key**: 
     ```bash
     export OPENAI_API_KEY='sk-...'
